@@ -253,8 +253,13 @@ Lỗi 10: Dòng 44-45 — Thẻ `<p>` trong footer không được đóng — Th
 Lỗi 11: Dòng 48 — Thiếu thẻ đóng `</html>` — Thêm thẻ đóng cuối tài liệu.
 
 B4
-3 thẻ semantic mà trang shoppe.vn sử dụng là
-`<header></header>`
-`<footer></footer>`
-`<section></section>`
-![ảnh màn hình tab Elements](screenshots/B4.png)
+
+1.  3 thẻ semantic mà trang shoppe.vn sử dụng là
+    `<header></header>`
+    `<footer></footer>`
+    `<section></section>`
+    ![ảnh màn hình tab Elements](screenshots/B4.1.png)
+
+2.  Method sử dụng là GET
+    Input type: Text
+    Action: none
