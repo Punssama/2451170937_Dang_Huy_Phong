@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Box Model Lab</title>
+	<link rel="stylesheet" href="boxmodel.css" />
+</head>
+<body>
+	<main class="page">
+		<section class="section">
+			<h1>Box Model Lab</h1>
+			<p>So sánh content-box và border-box.</p>
+
+			<div class="compare-row">
+				<div class="box box-content">
+					<h2>Hộp 1</h2>
+					<p>content-box</p>
+				</div>
+
+				<div class="box box-border">
+					<h2>Hộp 2</h2>
+					<p>border-box</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>Layout 3 cột</h2>
+			<div class="layout layout-content-box">
+				<aside class="sidebar">Sidebar</aside>
+				<section class="content">Content</section>
+				<aside class="ads">Ads</aside>
+			</div>
+
+			<div class="layout layout-border-box">
+				<aside class="sidebar">Sidebar</aside>
+				<section class="content">Content</section>
+				<aside class="ads">Ads</aside>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

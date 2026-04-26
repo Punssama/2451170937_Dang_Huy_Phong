@@ -1,19 +1,36 @@
-# 10 input types khác nhau trong HTML5
 
-| Input type | Giao diện hiển thị | Validation tự động | Use case trong trang E-Commerce |
-|---|---|---|---|
-| `text` | Ô nhập một dòng văn bản, hiển thị đơn giản | Không kiểm tra định dạng cụ thể, nhưng có thể dùng `required`, `minlength`, `maxlength` | Nhập họ tên khách hàng, tên người nhận |
-| `email` | Ô nhập văn bản một dòng, thường có biểu tượng/kiểu nhập phù hợp cho email | Kiểm tra đúng định dạng email, ví dụ có ký tự `@` | Nhập email đăng ký, nhận đơn hàng, khôi phục mật khẩu |
-| `password` | Ô nhập bị che ký tự bằng dấu chấm hoặc sao | Không kiểm tra độ mạnh mật khẩu, nhưng có thể kết hợp `required`, `minlength` | Tạo tài khoản, đăng nhập, đổi mật khẩu |
-| `number` | Ô nhập số, thường có nút tăng/giảm | Chỉ cho nhập số, hỗ trợ `min`, `max`, `step` | Nhập số lượng sản phẩm, mã giảm giá dạng số, tuổi khách hàng |
-| `tel` | Ô nhập số điện thoại, giao diện tương tự text | Không tự kiểm tra định dạng chuẩn quốc tế, nhưng có thể dùng `pattern` | Nhập số điện thoại giao hàng hoặc xác minh OTP |
-| `date` | Bộ chọn ngày tháng, thường là lịch | Kiểm tra giá trị ngày hợp lệ, hỗ trợ `min`, `max` | Chọn ngày giao hàng, ngày sinh khách hàng |
-| `time` | Bộ chọn giờ phút | Kiểm tra giá trị thời gian hợp lệ | Chọn khung giờ nhận hàng hoặc giờ hẹn giao |
-| `file` | Nút chọn tệp từ thiết bị | Có thể giới hạn bằng `accept`, `multiple` | Tải ảnh sản phẩm, ảnh hóa đơn, ảnh xác minh đơn hàng |
-| `checkbox` | Ô chọn bật/tắt, có thể chọn nhiều mục | Có thể bắt buộc chọn bằng `required` | Chọn đồng ý điều khoản, chọn nhiều sở thích hoặc phương thức nhận tin |
-| `radio` | Nhiều nút chọn một trong nhiều lựa chọn | Trong cùng nhóm chỉ chọn được một giá trị, có thể `required` | Chọn phương thức thanh toán, chọn kích cỡ sản phẩm, chọn giới tính trong hồ sơ |
+A1
+Các cách nhúng CSS vào HTML là:
++ Inline:
+  ```html
+    <h1 style="background-color:red"></h1>
+  ```
++ Internal
+  ```html
+    <style>
+      p{
+        background-color: red;
+      }
+    </style>
+  ```
++ External
+    ```html
+    <link rel="stylesheet" href="mystyle.css">
+    ```
 
-## Ghi chú
++ Nếu có 3 loại nhúng CSS cùng được dùng thì loại nào viết sau sẽ ghi đè loại được viết trước, vì code được dịch từ trên xuống.
 
-- HTML5 đã hỗ trợ nhiều kiểu input giúp giảm lỗi nhập liệu.
-- Kết hợp thêm các thuộc tính như `required`, `min`, `max`, `pattern`, `step`, `maxlength` để kiểm soát dữ liệu tốt hơn.
+A2
+```css
+1. h1                           → Chọn: <h1l>ShopTLU</h1> 
+2. .price                       → Chọn: <p class="price">25.990.000</p>
+3. #app header                  → Chọn: <header class="top-bar dark"></header>
+4. nav a:first-child             → Chọn: `<a href="/" class="active">Home</a>`
+5. .product.featured h2         → Chọn: `<h2>MacBook Pro</h2>`
+6. article > p                  → Chọn: `<p class="price">25.990.000đ</p>
+            <p>Mô tả sản phẩm...</p>`
+7. a[href="/"]                  → Chọn: <a href="/" class="active">Home</a
+8. .top-bar.dark h1              → Chọn:  <h1>ShopTLU</h1>
+```
+
+A3
