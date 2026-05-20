@@ -152,6 +152,53 @@
 
 ---
 
+## PHẦN B — THỰC HÀNH CODE
+
+### Bài B1 — Responsive Product Page
+
+- File: [responsive.html](responsive.html)
+- File: [responsive.css](responsive.css)
+
+**Đã làm đúng yêu cầu chính:**
+
+- Mobile-first, CSS mặc định 1 cột.
+- `@media (min-width: 768px)` cho tablet.
+- `@media (min-width: 1024px)` cho desktop.
+- Navigation hamburger trên mobile, menu ngang trên tablet/desktop.
+- Sidebar ẩn trên mobile, hiện lại từ tablet.
+- 8 product cards.
+- Ảnh responsive với `max-width: 100%; height: auto;`.
+
+### Bài B2 — CSS Transitions & Animations
+
+- File: [animations.html](animations.html)
+- File: [animations.css](animations.css)
+
+**Đã làm đủ 5 hiệu ứng:**
+
+- Card hover: `translateY(-8px)` + shadow.
+- Button hover: đổi màu + scale nhẹ.
+- Image zoom: ảnh phóng to khi hover.
+- Loading spinner: `@keyframes spin`.
+- Fade-in: `@keyframes fadeIn`.
+
+### Bài B3 — SCSS Refactor
+
+- Folder: [scss](scss)
+- File: [scss/_variables.scss](scss/_variables.scss)
+- File: [scss/_mixins.scss](scss/_mixins.scss)
+- File: [scss/_components.scss](scss/_components.scss)
+- File: [scss/style.scss](scss/style.scss)
+- File output: [scss/style.css](scss/style.css)
+
+**Lệnh compile:**
+
+```bash
+npx -y sass scss/style.scss scss/style.css
+```
+
+---
+
 ## PHẦN C — PHÂN TÍCH
 
 ### Câu C1 — Phân tích trang web thực
