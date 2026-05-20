@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PBT 04 - Positioning Playground</title>
+    <link rel="stylesheet" href="positioning.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">ShopTLU</div>
+      <nav aria-label="Điều hướng chính">
+        <a href="#overview">Tổng quan</a>
+        <a href="#sticky">Sidebar</a>
+        <a href="#cards">Sản phẩm</a>
+        <a href="#footer">Liên hệ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="overview">
+        <p class="hero-kicker">Positioning Playground</p>
+        <h1>Fixed, Sticky, Absolute và Fixed Button</h1>
+        <p>
+          Trang này dùng để minh hoạ 4 kiểu position cơ bản trong CSS: header
+          fixed, sidebar sticky, badge absolute và nút quay lên đầu trang fixed.
+        </p>
+      </section>
+
+      <section class="layout" id="sticky">
+        <aside class="sidebar">
+          <h2>Danh mục</h2>
+          <ul>
+            <li>Điện thoại</li>
+            <li>Laptop</li>
+            <li>Phụ kiện</li>
+            <li>Tablet</li>
+            <li>Smartwatch</li>
+            <li>Âm thanh</li>
+          </ul>
+        </aside>
+
+        <section class="content" id="cards">
+          <article class="card">
+            <span class="badge">HOT</span>
+            <img
+              src="https://placehold.co/600x360/1d4ed8/ffffff?text=Product+1"
+              alt="Sản phẩm 1"
+            />
+            <h2>iPhone 16 Pro</h2>
+            <p>
+              Mẫu điện thoại cao cấp với camera mạnh, hiệu năng tốt và thiết kế
+              sang trọng.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="badge">HOT</span>
+            <img
+              src="https://placehold.co/600x360/0f766e/ffffff?text=Product+2"
+              alt="Sản phẩm 2"
+            />
+            <h2>MacBook Air M3</h2>
+            <p>
+              Laptop mỏng nhẹ, phù hợp học tập và làm việc với thời lượng pin
+              dài.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="badge">HOT</span>
+            <img
+              src="https://placehold.co/600x360/b45309/ffffff?text=Product+3"
+              alt="Sản phẩm 3"
+            />
+            <h2>AirPods Pro</h2>
+            <p>Tai nghe chống ồn chủ động, tiện cho di chuyển và học online.</p>
+          </article>
+        </section>
+      </section>
+
+      <section class="spacer" aria-hidden="true">
+        <h2>Nội dung kéo dài để test cuộn trang</h2>
+        <p>
+          Kéo xuống để xem header luôn nằm trên cùng, sidebar dính theo trục dọc
+          và nút fixed vẫn giữ nguyên vị trí ở góc phải dưới.
+        </p>
+        <p>Phần này được lặp lại để tạo đủ chiều cao cho trang.</p>
+        <p>Phần này được lặp lại để tạo đủ chiều cao cho trang.</p>
+        <p>Phần này được lặp lại để tạo đủ chiều cao cho trang.</p>
+        <p>Phần này được lặp lại để tạo đủ chiều cao cho trang.</p>
+        <p>Phần này được lặp lại để tạo đủ chiều cao cho trang.</p>
+        <p>Phần này được lặp lại để tạo đủ chiều cao cho trang.</p>
+        <p>Phần này được lặp lại để tạo đủ chiều cao cho trang.</p>
+      </section>
+    </main>
+
+    <footer id="footer" class="site-footer">
+      <p>© 2026 ShopTLU. Positioning demo.</p>
+    </footer>
+
+    <a class="to-top" href="#overview" aria-label="Quay lên đầu trang">↑</a>
+  </body>
+</html>

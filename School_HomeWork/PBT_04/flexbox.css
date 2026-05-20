@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: #333;
+  color: white;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.auth-links {
+  display: flex;
+  gap: 12px;
+}
+
+.main-nav a,
+.auth-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main-nav a:hover,
+.auth-links a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 20px);
+  flex: 0 0 calc(25% - 20px);
+  box-shadow: 0 8px 20px gray;
+  border-radius: 5%;
+  overflow: hidden;
+  /* position: relative; */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px #e5e7be;
+  transition: 0.3s;
+}
+.sale-icon {
+  position: absolute;
+  background-color: #333;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.buy-btn {
+  display: block;
+  margin-top: auto;
+  text-decoration: none;
+  text-align: center;
+}
+
+.section-head {
+  justify-content: center;
+  display: flex;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
